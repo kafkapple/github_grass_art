@@ -21,7 +21,7 @@ setup(
     description="Create art with GitHub contribution graph",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/github_grass_art",
+    url="https://github.com/kafkapple/github_grass_art",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
