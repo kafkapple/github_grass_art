@@ -3,7 +3,7 @@
 import os
 import subprocess
 from datetime import datetime
-from schedule_generator import ScheduleGenerator
+from github_grass_art.schedule_generator import ScheduleGenerator
 
 class AutoCommitter:
     def __init__(self, schedule, repo_path):
@@ -21,8 +21,8 @@ class AutoCommitter:
             env['GIT_AUTHOR_DATE'] = date_str
             env['GIT_COMMITTER_DATE'] = date_str
             subprocess.call(['git', 'commit', '-m', f'Auto commit on {date_str}'], env=env)
-        print("모든 커밋이 완료되었습니다.")
+        print("All commits completed.")
 
     def push(self):
         subprocess.call(['git', 'push', 'origin', 'main'])
-        print("원격 저장소로 푸시되었습니다.")
+        print("Pushed to remote repository.")
